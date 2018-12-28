@@ -47,7 +47,7 @@ p {
   /*background: #FFB300;*/
   background: rgb(178, 230, 230);
   width: 56px;
-  height: 200px;
+  height: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -128,11 +128,11 @@ p {
   width: 175px;
   height: 180px;
   display: inline-block;
-  float: right;
   padding: 50px 20px 30px 20px;
-  /*background: #FFFFFF;*/
   color: #5b5b5b;
   margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   opacity: 0;
   -webkit-animation: moveIn 1s 3.1s ease forwards;
@@ -143,12 +143,48 @@ p {
   margin: 0 auto;
   min-width: 100%;
 }
+.profile-card .reachmewrapper{
+  text-align: center;
+  color: #5b5b5b;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.profile-card .homepage-button{
+  background: #0069ed;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  left: 30%;
+  -webkit-appearance: none;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  /*some padding to avoid clutter*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profile-card .homepage-button:hover,
+.profile-card .homepage-button:focus{
+  background: #0053ba;
+  outline: none;
+  outline-offset: -4px;
+}
+.profile-card .homepage-button:active{
+  transform: scale(0.99);
+}
 .profile-social-links {
   width: 50%;
   display: flex; /*inline-block;*/
   float: left;
   margin: 0px;
-  padding-top: 5px;
+  padding-top: 20px;
   padding-bottom: 5px;
   padding-left: 0px;
   padding-right: 0px;
@@ -486,8 +522,8 @@ p {
       border-radius: 4px;
     }
     100% {
-      width: 280px;
-      height: 440px;
+      width: 400px;
+      height: 600px;
       background: #FFFFFF;
       border-radius: 4px;
     }
